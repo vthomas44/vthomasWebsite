@@ -1,0 +1,308 @@
+@font-face {
+    font-family: "Cabin";
+    src: url(assets/fonts/Cabin-Regular.ttf);
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Kufam";
+    src: url(assets/fonts/Kufam-Bold.ttf);
+    font-weight: bold;
+    font-style: normal;
+}
+
+#about p {
+    hyphens: auto;
+}
+
+.pgia-slider {
+    height: auto;
+}
+
+.pgia-slider h5 {
+    text-shadow: 2px 2px 5px black;
+}
+
+.section1 {
+    background: linear-gradient(white,white,#c0c0aa);
+    height: 100%;
+}
+
+.section2 {
+    background: linear-gradient(#c0c0aa, #1cefff);
+    height: 100%;
+}
+
+.section3 {
+    background: linear-gradient(#1cefff, #2b2d3d);
+    height: 100%;
+}
+
+.header {
+    background: linear-gradient(#E3FFB1, #B1FFFB);
+    height: 100%;
+}
+
+@keyframes bg {
+    0% {
+        background: #c7fedc;
+    }
+
+    5% {
+        background: #cff7cd;
+    }
+
+    10% {
+        background: #ddeeb8;
+    }
+
+    15% {
+        background: #e7e6a7;
+    }
+
+    20% {
+        background: #f1de96;
+    }
+
+    25% {
+        background: #f8d98b;
+    }
+
+    30% {
+        background: #f9bd83;
+    }
+
+    35% {
+        background: #f9a581;
+    }
+
+    40% {
+        background: #f88d7f;
+    }
+
+    45% {
+        background: #f9a581;
+    }
+
+    50% {
+        background: #f9bd83;
+    }
+
+    55% {
+        background: #f8d98b;
+    }
+
+    60% {
+        background: #f1de96;
+    }
+
+    70% {
+        background: #e7e6a7;
+    }
+
+    80% {
+        background: #ddeeb8;
+    }
+
+    90% {
+        background: #cff7cd;
+    }
+
+    100% {
+        background: #c7fedc;
+    }
+}
+
+#box {
+    background: #c7fedc;
+    animation: bg 5s linear infinite;
+}
+
+.photo {
+    color: #FF0000;
+    font-weight: bold;
+    font-family: Tahoma;
+    font-size: 70;
+}
+
+.photo1 {
+    color: #1a9b00;
+    font-weight: bold;
+    font-family: Tahoma;
+    font-size: 70;
+}
+
+.photo2 {
+    color: #24009b;
+    font-weight: bold;
+    font-family: Tahoma;
+    font-size: 70;
+}
+
+.photo3 {
+    color: #999b00;
+    font-weight: bold;
+    font-family: Tahoma;
+    font-size: 70;
+}
+
+.photo4 {
+    color: #cb7905;
+    font-weight: bold;
+    font-family: Tahoma;
+    font-size: 70;
+}
+
+.photo5 {
+    color: #05c9cb;
+    font-weight: bold;
+    font-family: Tahoma;
+    font-size: 70;
+}
+
+.Button {
+    text-align: center;
+    color: #790d0d;
+    font-size: 20px;
+    letter-spacing: 5px;
+    font-weight: bold;
+    margin: 0;
+    line-height: 0;
+    animation: glitch1 0.5s infinite;
+}
+
+.Button:nth-child(2) {
+    color: #0ef0e1;
+    animation: glitch2 1.0s infinite;
+}
+
+.Button:nth-child(3) {
+    color: #ff94eb;
+    animation: glitch3 1.0s infinite;
+}
+
+@keyframes glitch1 {
+    0% {
+        transform: none;
+        opacity: 1;
+    }
+
+    50% {
+        transform: skew(-2deg, 0.6deg);
+        opacity: 0.75;
+    }
+
+    100% {
+        transform: none;
+        opacity: 1;
+    }
+}
+
+@keyframes glitch2 {
+    0% {
+        transform: none;
+        opacity: 0.25;
+    }
+
+    50% {
+        transform: translate(-3px, -1px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: none;
+        opacity: 0.25;
+    }
+}
+
+@keyframes glitch3 {
+    0% {
+        transform: none;
+        opacity: 0.25;
+    }
+
+    50% {
+        transform: translate(3px, 1px);
+        opacity: 0.5;
+    }
+
+    100% {
+        transform: none;
+        opacity: 0.25;
+    }
+}
+
+#slider,
+.wrap,
+.slide-content {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+.wrap {
+    position: relative;
+}
+
+.slide {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slide1 {
+    background-image: url(assets/img/100.jpg);
+}
+
+.slide2 {
+    background-image: url(assets/img/200.jpg);
+}
+
+.slide3 {
+    background-image: url(assets/img/300.jpg);
+}
+
+.slide4 {
+    background-image: url(assets/img/400.jpg);
+}
+
+.slide-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.slide-content span {
+    font-size: 5rem;
+    color: #fff;
+}
+
+.arrow {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    margin-top: -35px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+}
+
+#arrow-left {
+    border-width: 30px 40px 30px 0;
+    border-color: transparent #fff transparent transparent;
+    left: 0;
+    margin-left: 30px;
+}
+
+#arrow-right {
+    border-width: 30px 0 30px 40px;
+    border-color: transparent transparent transparent #fff;
+    right: 0;
+    margin-right: 30px;
+}
